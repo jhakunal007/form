@@ -1,4 +1,5 @@
-const API_BASE = 'http://127.0.0.1:5000/api';
+// Use relative '/api' on production (Vercel) to avoid Mixed Content & CORS, or VITE_API_URL if set
+const API_BASE = (import.meta.env.VITE_API_URL || '/api').replace(/\/+$/, '');
 
 /**
  * Check health status of the backend API

@@ -73,26 +73,26 @@ export default function App() {
     <main className="app-container">
       {/* Brand Header */}
       <header className="app-header">
-        {/* <div className="header-badges">
+        <div className="header-badges">
           <div className="badge-pill">
             <Sparkles size={14} className="badge-icon" />
-            <span></span>
-          </div> */}
+            <span>Live Registration</span>
+          </div>
 
-        {/* <div className={`badge-pill ${backendOnline ? 'badge-backend-online' : 'badge-backend-offline'}`}>
-            {/* {backendOnline ? (
-            //   <>
-            //     <Wifi size={13} className="badge-icon-status" />
-            //     <span>Express API Connected (Port 5000)</span>
-            //   </>
-            // ) : (
-            //   <>
-            //     <WifiOff size={13} className="badge-icon-status" />
-            //     <span>Backend Offline (Local Fallback)</span>
-            //   </>
-            )} */}
-        {/* </div> */}
-        {/* </div> */}
+          <div className={`badge-pill ${backendOnline ? 'badge-backend-online' : 'badge-backend-offline'}`}>
+            {backendOnline ? (
+              <>
+                <Wifi size={13} className="badge-icon-status" />
+                <span>Backend API Connected</span>
+              </>
+            ) : (
+              <>
+                <WifiOff size={13} className="badge-icon-status" />
+                <span>Syncing Backend...</span>
+              </>
+            )}
+          </div>
+        </div>
 
         <h1 className="main-title">
           Create an <span className="text-gradient">Account</span>
